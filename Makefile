@@ -12,13 +12,10 @@ login:
 	$(CONTAINER_RUNTIME) login -u $(DOCKER_USERNAME) -p $(DOCKER_PASSWORD) 
 
 build:
-	$(MAKE) clean 
-	$(MAKE) login
 	$(CONTAINER_RUNTIME) build -t ${IMAGE_NAME}:$(VERSION) .
 	$(CONTAINER_RUNTIME) tag ${IMAGE_NAME}:$(VERSION) ${IMAGE_NAME}:latest
 
 push:
-	$(MAKE) build
 	$(CONTAINER_RUNTIME) push ${IMAGE_NAME}:$(VERSION)
 	$(CONTAINER_RUNTIME) push ${IMAGE_NAME}:latest
 
