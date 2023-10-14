@@ -18,7 +18,7 @@
 <script>
 export default {
   props: {
-    services: Array,
-  },
-};
+    services: Array
+  }
+}
 </script>

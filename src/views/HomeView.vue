@@ -24,11 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <div class="main-content">
     <NavBar :navItems="navItems" />
-    <AboutView
-    :summary="summary"
-    :services="services"
-    :testimonials="testimonials"
-    />
+    <AboutView :summary="summary" :services="services" :testimonials="testimonials" />
   </div>
 </template>
 
@@ -43,14 +39,14 @@ import testimonialData from '../data/testimonials.json'
 export default {
   components: {
     NavBar,
-    AboutView,
+    AboutView
   },
   data() {
     return {
       navItems: navbarData,
       services: serviceData,
       summary: profileData.summary,
-      testimonials: testimonialData,
+      testimonials: testimonialData
     }
   }
 }

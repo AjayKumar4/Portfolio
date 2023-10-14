@@ -12,6 +12,6 @@
 export default {
   props: {
     socials: Array
-  },
-};
+  }
+}
 </script>

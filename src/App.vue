@@ -52,7 +52,7 @@ export default {
       avatarSrc: profileData.avatarSrc,
       name: profileData.name,
       title: profileData.title,
-      avatarWidth: profileData.avatarWidth,
+      avatarWidth: profileData.avatarWidth
     }
   }
 }
