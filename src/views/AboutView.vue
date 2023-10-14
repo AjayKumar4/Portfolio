@@ -9,6 +9,7 @@
     <ServiceList :services="services" />
     <TestimonialList :testimonials="testimonials" />
     <TestimonialModel :testimonials="testimonials" />
+    <ClientList :clients="clients" />
   </article>
 </template>
 
@@ -16,17 +17,20 @@
 import ServiceList from '../components/ServiceList.vue'
 import TestimonialList from '../components/TestimonialList.vue'
 import TestimonialModel from '../components/TestimonialModel.vue'
+import ClientList from '../components/ClientList.vue'
 
 export default {
   props: {
     summary: String,
     services: Array,
-    testimonials: Array
+    testimonials: Array,
+    clients: Array,
   },
   components: {
     ServiceList,
     TestimonialList,
-    TestimonialModel
+    TestimonialModel,
+    ClientList,
   }
 }
 </script>

@@ -23,18 +23,26 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div class="main-content">
-    <NavBar :navItems="navItems" />
-    <AboutView :summary="summary" :services="services" :testimonials="testimonials" />
+    <NavBar 
+      :navItems="navItems" 
+    />
+    <AboutView 
+      :summary="summary" 
+      :services="services" 
+      :testimonials="testimonials" 
+      :clients="clients"
+    />
   </div>
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
-import AboutView from './AboutView.vue'
-import navbarData from '../data/navbar.json'
-import serviceData from '../data/services.json'
-import profileData from '../data/profile.json'
-import testimonialData from '../data/testimonials.json'
+import NavBar from '../components/NavBar.vue';
+import AboutView from './AboutView.vue';
+import navbarData from '../data/navbar.json';
+import serviceData from '../data/services.json';
+import profileData from '../data/profile.json';
+import testimonialData from '../data/testimonials.json';
+import clientData from '../data/clients.json';
 
 export default {
   components: {
@@ -46,7 +54,8 @@ export default {
       navItems: navbarData,
       services: serviceData,
       summary: profileData.summary,
-      testimonials: testimonialData
+      testimonials: testimonialData,
+      clients: clientData,
     }
   }
 }

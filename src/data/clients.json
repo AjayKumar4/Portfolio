@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Hertz",
+      "url": "https://www.hertz.com/",
+      "image": "./src/assets/images/hertz.svg"
+    },
+    {
+      "name": "Siren",
+      "url": "https://siren.io/",
+      "image": "./src/assets/images/siren.svg"
+    },
+    {
+      "name": "TestReach",
+      "url": "https://www.testreach.com/",
+      "image": "./src/assets/images/testreach.svg"
+    },
+    {
+      "name": "Wipfli",
+      "url": "https://www.wipfli.com/",
+      "image": "./src/assets/images/wipfli.png"
+    },
+    {
+      "name": "Pratian",
+      "url": "https://www.pratian.com/",
+      "image": "./src/assets/images/pratian.png"
+    }
+]
+  
