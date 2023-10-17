@@ -142,7 +142,8 @@ html {
 
 body {
   background: var(--smoky-black);
-  background-image: url(../images/triangles-top.svg), url(../images/triangles-bottom.svg);
+  background-image: url(../images/background/triangles-top.svg),
+    url(../images/background/triangles-bottom.svg);
   background-position:
     0 0,
     100% 100%;

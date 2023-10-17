@@ -165,7 +165,7 @@ article.active {
  * responsive larger than 450px screen
  */
 
- @media (min-width: 450px) {
+@media (min-width: 450px) {
   /**
    * client
    */

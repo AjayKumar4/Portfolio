@@ -24,13 +24,13 @@ export default {
     summary: String,
     services: Array,
     testimonials: Array,
-    clients: Array,
+    clients: Array
   },
   components: {
     ServiceList,
     TestimonialList,
     TestimonialModel,
-    ClientList,
+    ClientList
   }
 }
 </script>

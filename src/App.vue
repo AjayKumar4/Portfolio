@@ -22,38 +22,15 @@ import HelloWorld from './components/HelloWorld.vue'
 -->
 
 <template>
-  <SideBar
-    :avatarSrc="avatarSrc"
-    :name="name"
-    :title="title"
-    :avatarWidth="avatarWidth"
-    :contactsData="contactsData"
-    :socialsData="socialsData"
-  />
   <HomeView />
 </template>
 
 <script>
-import SideBar from './components/SideBar.vue'
 import HomeView from './views/HomeView.vue'
-import contactData from './data/contacts.json'
-import socialData from './data/socials.json'
-import profileData from './data/profile.json'
 
 export default {
   components: {
-    SideBar,
     HomeView
-  },
-  data() {
-    return {
-      contactsData: contactData,
-      socialsData: socialData,
-      avatarSrc: profileData.avatarSrc,
-      name: profileData.name,
-      title: profileData.title,
-      avatarWidth: profileData.avatarWidth
-    }
   }
 }
 </script>

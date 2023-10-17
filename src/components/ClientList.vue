@@ -4,7 +4,7 @@
     <ul class="clients-list has-scrollbar">
       <li class="clients-item" v-for="(client, index) in clients" :key="index">
         <a :href="client.url">
-          <img :src="client.image" :alt="client.name">
+          <img :src="client.image" :alt="client.name" />
         </a>
       </li>
     </ul>
@@ -14,7 +14,7 @@
 <script>
 export default {
   props: {
-    clients: Array,
+    clients: Array
   }
 }
 </script>
