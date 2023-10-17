@@ -1,7 +1,7 @@
 SHELL :=/bin/bash
 
 export PROJECT := portfolio
-export VERSION := 1.0.0
+export VERSION := 2.0.0
 export IMAGE_NAME := $(DOCKER_USERNAME)/$(PROJECT)
 CONTAINER_RUNTIME := $(shell command -v podman 2>/dev/null && echo podman || echo docker)
 
