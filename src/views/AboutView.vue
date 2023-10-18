@@ -4,7 +4,7 @@
       <h2 class="h2 article-title">About me</h2>
     </header>
     <section class="about-text">
-      <p>{{ summary }}</p>
+      <p>{{ profiles.summary }}</p>
     </section>
     <ServiceList :services="services" />
     <TestimonialList :testimonials="testimonials" />
@@ -13,24 +13,14 @@
   </article>
 </template>
 
-<script>
+<script setup lang="ts">
 import ServiceList from '../components/ServiceList.vue'
 import TestimonialList from '../components/TestimonialList.vue'
 import TestimonialModel from '../components/TestimonialModel.vue'
 import ClientList from '../components/ClientList.vue'
 
-export default {
-  props: {
-    summary: String,
-    services: Array,
-    testimonials: Array,
-    clients: Array
-  },
-  components: {
-    ServiceList,
-    TestimonialList,
-    TestimonialModel,
-    ClientList
-  }
-}
+import profiles from '../data/profiles'
+import services from '../data/services'
+import testimonials from '../data/testimonials'
+import clients from '../data/clients'
 </script>

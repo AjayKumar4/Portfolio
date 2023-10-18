@@ -9,6 +9,10 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import technologies from '../data/technologies'
+<script>
+export default {
+  props: {
+    technologies: Array
+  }
+}
 </script>
