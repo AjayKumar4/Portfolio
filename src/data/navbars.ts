@@ -1,9 +1,22 @@
-const navbars = [
-  { label: 'About' },
-  { label: 'Resume' },
-  { label: 'Portfolio' },
-  { label: 'Blog' },
-  { label: 'Contact' }
+export const navbars = [
+  {
+    label: 'About',
+    active: true
+  },
+  {
+    label: 'Resume',
+    active: false
+  },
+  {
+    label: 'Portfolio',
+    active: false
+  },
+  //{
+  //  label: 'Blog',
+  //  active: false
+  //},
+  {
+    label: 'Contact',
+    active: false
+  }
 ]
-
-export default navbars

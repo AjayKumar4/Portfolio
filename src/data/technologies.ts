@@ -1,4 +1,4 @@
-const technologies = [
+export const technologies = [
   {
     name: 'Docker',
     image: './src/assets/images/technologies/Docker.svg'
@@ -212,5 +212,3 @@ const technologies = [
     image: './src/assets/images/technologies/Slack.svg'
   }
 ]
-
-export default technologies

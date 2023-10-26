@@ -1,4 +1,4 @@
-const services = [
+export const services = [
   {
     iconSrc: './src/assets/images/service/argocd-icon.svg',
     iconAlt: 'design icon',
@@ -30,5 +30,3 @@ const services = [
       'Monitoring the performance and health of software systems and alerting the appropriate teams when problems are detected.'
   }
 ]
-
-export default services

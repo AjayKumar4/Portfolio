@@ -1,4 +1,4 @@
-const experiences = [
+export const experiences = [
   {
     company: 'Hertz - DevOps',
     year: '2022 — Present',
@@ -44,5 +44,3 @@ const experiences = [
     ]
   }
 ]
-
-export default experiences

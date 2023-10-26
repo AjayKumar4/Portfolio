@@ -52,5 +52,5 @@
 </template>
 
 <script setup lang="ts">
-import maps from '../data/maps'
+import { maps } from '../data/maps'
 </script>

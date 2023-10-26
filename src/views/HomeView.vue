@@ -22,31 +22,21 @@ import HelloWorld from './components/HelloWorld.vue'
 -->
 
 <template>
-  <SideBar
-    :avatarSrc="profiles.avatarSrc"
-    :name="profiles.name"
-    :title="profiles.title"
-    :avatarWidth="profiles.avatarWidth"
-    :contactsData="contacts"
-    :socialsData="socials"
-  />
+  <SideBar />
   <div class="main-content">
-    <NavBar :navItems="navbars" />
+    <NavBar />
     <AboutView />
     <ResumeView />
+    <PortfolioView />
     <ContactView />
   </div>
 </template>
 
 <script setup lang="ts">
-import SideBar from '../components/SideBar.vue'
-import NavBar from '../components/NavBar.vue'
+import SideBar from './SideBarView.vue'
+import NavBar from './NavBarView.vue'
 import AboutView from './AboutView.vue'
 import ResumeView from './ResumeView.vue'
 import ContactView from './ContactView.vue'
-
-import contacts from '../data/contacts'
-import socials from '../data/socials'
-import profiles from '../data/profiles'
-import navbars from '../data/navbars'
+import PortfolioView from './PortfolioView.vue'
 </script>

@@ -1,4 +1,4 @@
-const clients = [
+export const clients = [
   {
     name: 'Hertz',
     url: 'https://www.hertz.com/',
@@ -25,5 +25,3 @@ const clients = [
     image: './src/assets/images/client/pratian.png'
   }
 ]
-
-export default clients

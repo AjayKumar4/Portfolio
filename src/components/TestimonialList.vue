@@ -25,8 +25,6 @@
 </template>
 
 <script>
-import TestimonialModel from './TestimonialModel.vue'
-
 export default {
   props: {
     testimonials: Array

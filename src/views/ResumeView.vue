@@ -14,7 +14,7 @@ import EducationList from '../components/EducationList.vue'
 import ExperienceList from '../components/ExperienceList.vue'
 import SkillList from '../components/SkillList.vue'
 
-import educations from '../data/educations'
-import experiences from '../data/experiences'
-import technologies from '../data/technologies'
+import { educations } from '../data/educations'
+import { experiences } from '../data/experiences'
+import { technologies } from '../data/technologies'
 </script>

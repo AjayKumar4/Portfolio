@@ -19,8 +19,8 @@ import TestimonialList from '../components/TestimonialList.vue'
 import TestimonialModel from '../components/TestimonialModel.vue'
 import ClientList from '../components/ClientList.vue'
 
-import profiles from '../data/profiles'
-import services from '../data/services'
-import testimonials from '../data/testimonials'
-import clients from '../data/clients'
+import { profiles } from '../data/profiles'
+import { services } from '../data/services'
+import { testimonials } from '../data/testimonials'
+import { clients } from '../data/clients'
 </script>

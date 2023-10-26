@@ -1,4 +1,4 @@
-const testimonials = [
+export const testimonials = [
   {
     avatarSrc: './src/assets/images/testimonial/testimonial-1.jpeg',
     avatarWidth: '60',
@@ -20,5 +20,3 @@ const testimonials = [
       'Ajay is very agile and outcome oriented. His solutioning skills helped the project to move faster. He is an asset for any organisation, I whole heartedly recommend him'
   }
 ]
-
-export default testimonials

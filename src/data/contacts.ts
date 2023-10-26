@@ -1,4 +1,4 @@
-const contacts = [
+export const contacts = [
   {
     iconName: 'mail-outline',
     title: 'Email',
@@ -24,5 +24,3 @@ const contacts = [
     value: 'Galway, Ireland'
   }
 ]
-
-export default contacts

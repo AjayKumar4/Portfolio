@@ -1,4 +1,4 @@
-const educations = [
+export const educations = [
   {
     school: 'Trinity College Dublin',
     year: '2017 — 2018',
@@ -10,5 +10,3 @@ const educations = [
     degree: 'Bachelor’s in Computer Science and Engineering'
   }
 ]
-
-export default educations
