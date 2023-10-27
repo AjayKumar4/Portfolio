@@ -1,5 +1,5 @@
 <template>
-  <article class="contact" data-page="contact">
+  <article class="contact" :class="{ active: isActive }" data-page="contact">
     <header>
       <h2 class="h2 article-title">Contact</h2>
     </header>
@@ -51,6 +51,32 @@
   </article>
 </template>
 
-<script setup lang="ts">
+<script>
 import { maps } from '../data/maps'
+
+export default {
+  data() {
+    return {
+      maps
+    }
+  },
+  mounted() {
+    // contact form variables
+    const form = document.querySelector('[data-form]')
+    const formInputs = document.querySelectorAll('[data-form-input]')
+    const formBtn = document.querySelector('[data-form-btn]')
+
+    // add event to all form input field
+    for (let i = 0; i < formInputs.length; i++) {
+      formInputs[i].addEventListener('input', function () {
+        // check form validation
+        if (form.checkValidity()) {
+          formBtn.removeAttribute('disabled')
+        } else {
+          formBtn.setAttribute('disabled', '')
+        }
+      })
+    }
+  }
+}
 </script>

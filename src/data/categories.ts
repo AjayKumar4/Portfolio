@@ -5,14 +5,14 @@ export const categories = [
   },
   {
     label: 'Certifications',
-    active: true
+    active: false
   },
   {
     label: 'Projects',
-    active: true
+    active: false
   },
   {
     label: 'Badges',
-    active: true
+    active: false
   }
 ]

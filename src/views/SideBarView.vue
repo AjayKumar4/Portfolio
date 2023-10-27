@@ -22,11 +22,40 @@
   </aside>
 </template>
 
-<script setup lang="ts">
+<script>
 import ContactList from '../components/ContactList.vue'
 import SocialList from '../components/SocialList.vue'
 
 import { contacts } from '../data/contacts'
 import { socials } from '../data/socials'
 import { profiles } from '../data/profiles'
+
+export default {
+  components: {
+    ContactList,
+    SocialList
+  },
+  data() {
+    return {
+      contacts,
+      socials,
+      profiles
+    }
+  },
+  mounted() {
+    // element toggle function
+    const elementToggleFunc = (elem) => {
+      elem.classList.toggle('active')
+    }
+
+    // sidebar variables
+    const sidebar = document.querySelector('[data-sidebar]')
+    const sidebarBtn = document.querySelector('[data-sidebar-btn]')
+
+    // sidebar toggle functionality for mobile
+    sidebarBtn.addEventListener('click', () => {
+      elementToggleFunc(sidebar)
+    })
+  }
+}
 </script>

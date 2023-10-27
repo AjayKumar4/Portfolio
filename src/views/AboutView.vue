@@ -1,5 +1,5 @@
 <template>
-  <article class="about active" data-page="about">
+  <article class="about" :class="{ active: true }" data-page="about">
     <header>
       <h2 class="h2 article-title">About me</h2>
     </header>
@@ -13,7 +13,7 @@
   </article>
 </template>
 
-<script setup lang="ts">
+<script>
 import ServiceList from '../components/ServiceList.vue'
 import TestimonialList from '../components/TestimonialList.vue'
 import TestimonialModel from '../components/TestimonialModel.vue'
@@ -23,4 +23,21 @@ import { profiles } from '../data/profiles'
 import { services } from '../data/services'
 import { testimonials } from '../data/testimonials'
 import { clients } from '../data/clients'
+
+export default {
+  components: {
+    ServiceList,
+    TestimonialList,
+    TestimonialModel,
+    ClientList
+  },
+  data() {
+    return {
+      profiles,
+      services,
+      testimonials,
+      clients
+    }
+  }
+}
 </script>

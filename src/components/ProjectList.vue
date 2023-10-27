@@ -1,6 +1,13 @@
 <template>
   <ul class="project-list">
-    <li class="project-item active" v-for="(project, index) in projects" :key="index">
+    <li
+      class="project-item"
+      :class="{ active: project.active }"
+      data-filter-item
+      :data-category="project.category.toLowerCase()"
+      v-for="(project, index) in projects"
+      :key="index"
+    >
       <a :href="project.link">
         <figure class="project-img">
           <div class="project-item-icon-box">
