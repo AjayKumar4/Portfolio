@@ -262,11 +262,12 @@ article.active {
   }
 
   .avatar-box {
-    border-radius: 30px;
+    border-radius: 50%;
   }
 
   .avatar-box img {
     width: 120px;
+    border-radius: 50%;
   }
 
   .info-content .name {
@@ -372,11 +373,12 @@ article.active {
 
   .testimonials-avatar-box {
     transform: translate(30px, -30px);
-    border-radius: 20px;
+    border-radius: 50%;
   }
 
   .testimonials-avatar-box img {
     width: 80px;
+    border-radius: 50%;
   }
 
   .testimonials-item-title {
@@ -411,12 +413,13 @@ article.active {
   }
 
   .modal-avatar-box {
-    border-radius: 18px;
+    border-radius: 50%;
     margin-bottom: 0;
   }
 
   .modal-avatar-box img {
     width: 65px;
+    border-radius: 50%;
   }
 
   .modal-img-wrapper > img {
@@ -557,6 +560,7 @@ article.active {
 
   .modal-avatar-box img {
     width: 80px;
+    border-radius: 50%;
   }
 
   /**
@@ -809,6 +813,7 @@ article.active {
 
   .avatar-box img {
     width: 150px;
+    border-radius: 50%;
   }
 
   .info-content .name {

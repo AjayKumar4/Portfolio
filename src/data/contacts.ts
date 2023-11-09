@@ -10,13 +10,13 @@ export const contacts = [
     title: 'Phone',
     link: 'tel:+353892235142',
     value: '+353 89 223 5142'
-  },
+  } /*,
   {
     iconName: 'calendar-outline',
     title: 'Birthday',
     link: 'datetime',
     value: 'May 7, 1994'
-  },
+  }*/,
   {
     iconName: 'location-outline',
     title: 'Location',
