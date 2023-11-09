@@ -9,7 +9,6 @@
               :src="testimonial.avatarSrc"
               :alt="testimonial.name"
               :width="testimonial.avatarWidth"
-              style="border-radius: 18px"
               data-testimonials-avatar
             />
           </figure>

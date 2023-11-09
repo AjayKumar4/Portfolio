@@ -101,6 +101,11 @@
 .testimonials-item {
   min-width: 100%;
   scroll-snap-align: center;
+  border-radius: 18px
+}
+
+.testimonials-item img {
+  border-radius: 18px
 }
 
 .testimonials-avatar-box {
@@ -232,6 +237,10 @@
 
 .modal-img-wrapper > img {
   display: none;
+}
+
+.modal-img-wrapper img {
+  border-radius: 18px
 }
 
 .modal-title {

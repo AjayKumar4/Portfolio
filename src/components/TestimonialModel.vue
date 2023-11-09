@@ -10,7 +10,6 @@
           <img
             :src="currentTestimonial.avatarSrc"
             :alt="currentTestimonial.name"
-            style="border-radius: 18px"
             :width="currentTestimonial.quoteAvatarWidth"
             data-modal-img
           />
