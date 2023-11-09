@@ -1,5 +1,5 @@
 export const profiles = {
-  avatarSrc: './src/assets/images/my-avatar.png',
+  avatarSrc: './src/assets/images/profile/aj.jpeg',
   name: 'Ajay Kumar',
   title: 'DevOps Engineer',
   avatarWidth: '80',
