@@ -22,6 +22,10 @@
   border-radius: 50%;
 }
 
+.avatar-box img {
+  border-radius: 50%;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
